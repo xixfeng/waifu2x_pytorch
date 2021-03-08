@@ -12,7 +12,7 @@ model_cran_v2.load_state_dict(torch.load(checkpoint, 'cpu'))
 # if use GPU, then comment out the next line so it can use fp16. 
 model_cran_v2 = model_cran_v2.float() 
 
-demo_img = "input_image.png"
+demo_img = "dataset/test/test1.png"
 img = Image.open(demo_img).convert("RGB")
 
 # origin
